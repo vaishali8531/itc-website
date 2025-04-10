@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITC Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="fade-in">
+    <h1>Welcome to ITC</h1>
+    <p>Innovators and Technologists Club (ITC) aims to bring together students passionate about technology, innovation, and collaboration.</p>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <p>Our mission is to foster a collaborative environment for students to innovate and learn. We organize workshops, hackathons, and regular sessions to support tech enthusiasts in their journey.</p>
+  </section>
+
+  <section id="events" class="fade-in">
+    <h2>Events</h2>
+    <label for="filter">Filter events:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="past">Past</option>
+      <option value="upcoming">Upcoming</option>
+    </select>
+    <div class="event upcoming">
+      <h3>CodeFest 2024</h3>
+      <p>An exciting 48-hour hackathon with prizes and networking opportunities.</p>
+    </div>
+    <div class="event past">
+      <h3>Web Dev Bootcamp</h3>
+      <p>Hands-on sessions for beginners to learn HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
